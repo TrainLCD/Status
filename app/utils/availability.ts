@@ -1,4 +1,4 @@
-import DATA from "../../data/status.json";
+import DATA from "../../status.json";
 
 export const isOperational = (() =>
   DATA.every((d) => d.status === "operational"))();

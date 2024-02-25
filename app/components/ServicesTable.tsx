@@ -13,12 +13,11 @@ export const ServicesTable = () => {
               <p className="text-xs mt-1">{svc.description_ja}</p>
             </div>
             <div className="flex justify-center items-center">
-              <StatusIcon status={svc.status} className="size-8 ml-2" />
+              <StatusIcon status={svc.status} className="size-8 md:ml-2 ml-3" />
             </div>
           </li>
         ))}
       </ul>
     </div>
-    // </table>
   );
 };

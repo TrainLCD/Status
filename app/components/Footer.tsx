@@ -114,7 +114,9 @@ export const Footer: React.FC = () => {
             開発者のポートフォリオ
           </Link>
           <Link
-            href="/privacy-policy"
+            href="https://trainlcd.app/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
             className="md:opacity-75 font-bold text-white text-xs transitionOpacity hover:opacity-100 h-min"
           >
             プライバシーポリシー

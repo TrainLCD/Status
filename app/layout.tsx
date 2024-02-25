@@ -8,8 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "TrainLCD System Status",
-  description:
-    "Resources for real-time and historical information about the TrainLCD service.",
+  description: "TrainLCDサービスの障害情報",
 };
 
 export default function RootLayout({

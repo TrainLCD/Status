@@ -56,9 +56,9 @@ import AppLogo from "./AppLogo";
 
 const Header: React.FC = () => {
   return (
-    <header className="border-b h-16 md:px-16 p-4 flex flex-row items-center">
+    <header className="border-b h-16 md:px-16 p-4 flex flex-row items-center bg-white">
       <AppLogo className="size-8" />
-      <p className="text-neutral-800 bg-white font-semibold ml-2 md:text-xl text-lg">
+      <p className="text-neutral-800 font-semibold ml-2 md:text-xl text-lg">
         Status
       </p>
     </header>

@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Mobile App",
+    "name": "モバイルアプリ",
     "status": "maintenance",
     "description_en": "We are temporarily suspending all services.",
-    "description_ja": "一時的にサービスを全面休止しております",
+    "description_ja": "一時的にサービスを全面休止しております。再開日時は未定です。",
     "status_since": "2013-12-15T00:00:00.000Z",
     "updated_at": "2013-12-15T00:00:00.000Z"
   },
@@ -13,7 +13,7 @@
     "name": "API",
     "status": "maintenance",
     "description_en": "Operation is temporarily suspended",
-    "description_ja": "一時的に稼働を休止しております",
+    "description_ja": "一時的に稼働を休止しております。再開日時は未定です。",
     "status_since": "2013-12-15T00:00:00.000Z",
     "updated_at": "2013-12-15T00:00:00.000Z"
   }

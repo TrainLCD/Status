@@ -1,22 +1,32 @@
-import { hasOutage, hasUnderMaintenanceService } from "../utils/availability";
+import {
+  hasDegradedService,
+  hasOutage,
+  hasUnderMaintenanceService,
+} from "../utils/availability";
 import { StatusIcon } from "./Icon";
 
 export const Overview = () => {
   const statusObj = (() => {
     if (hasUnderMaintenanceService) {
       return {
-        text: "TrainLCDサービスは現在メンテナンス中です。",
+        text: "TrainLCDサービスは現在メンテナンス中です",
         Icon: <StatusIcon status="maintenance" className="size-32" />,
+      };
+    }
+    if (hasDegradedService) {
+      return {
+        text: "TrainLCDサービスの一部にて障害が発生しております",
+        Icon: <StatusIcon status="degraded" className="size-32" />,
       };
     }
     if (hasOutage) {
       return {
-        text: "TrainLCDサービスにて障害が発生しております。",
+        text: "TrainLCDサービスにて致命的な障害が発生しております",
         Icon: <StatusIcon status="outage" className="size-32" />,
       };
     }
     return {
-      text: "すべてのサービスは正常に動作しています。",
+      text: "すべてのサービスは正常に動作しています",
       Icon: <StatusIcon status="operational" className="size-32" />,
     };
   })();

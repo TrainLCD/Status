@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
           viewBox="0 0 600 760"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-12 w-auto border rounded border-white"
+          className="h-12 w-auto md:border border-[0.5px] rounded border-white"
         >
           <g filter="url(#filter0_d_4_10)">
             <rect x="4" width="592" height="752" rx="84" fill="#231E1F"></rect>
